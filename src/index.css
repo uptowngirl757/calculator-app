@@ -1,1 +1,53 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+body {
+  font-family: 'Leauge Spartan', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@theme {
+  --color-background: hsl(222, 26%, 31%);
+  --color-screen-bg: hsl(224, 36%, 15%);
+  --color-toggle-keypad-bg: hsl(223, 31%, 20%);
+  --color-reset-del-key-bg: hsl(225, 21%, 49%);
+  --color-reset-del-key-shadow: hsl(224, 28%, 35%);
+  --color-equal-key-bg: hsl(6, 63%, 50%);
+  --color-equal-key-shadow: hsl(6, 70%, 34%);
+  --color-key-bg: hsl(0, 0%, 90%);
+  --color-key-shadow: hsl(28, 16%, 65%);
+  --color-text-dark: hsl(221, 14%, 31%);
+  --color-text-white: hsl(0, 100%, 100%);
+  /* --color-text-equal: hsl(0, 100%, 100%); */
+}
+@layer base {
+  [data-theme='light'] {
+    --color-background: hsl(0, 0%, 90%);
+    --color-screen-bg: hsl(0, 0%, 93%);
+    --color-toggle-keypad-bg: hsl(0, 5%, 81%);
+    --color-reset-del-key-bg: hsl(185, 42%, 37%);
+    --color-reset-del-key-shadow: hsl(185, 58%, 25%);
+    --color-equal-key-bg: hsl(25, 98%, 40%);
+    --color-equal-key-shadow: hsl(25, 99%, 27%);
+    --color-key-bg: hsl(0, 0%, 90%);
+    --color-key-shadow: hsl(35, 11%, 61%);
+    --color-text-dark: hsl(60, 10%, 19%);
+    --color-text-white: hsl(0, 100%, 100%);
+    /* --color-text-equal: hsl(0, 100%, 100%); */
+  }
+  [data-theme='neon'] {
+    --color-background: hsl(268, 75%, 9%);
+    --color-screen-bg: hsl(268, 71%, 12%);
+    --color-toggle-keypad-bg: hsl(268, 71%, 12%);
+    --color-reset-del-key-bg: hsl(281, 89%, 26%);
+    --color-reset-del-key-shadow: hsl(285, 91%, 52%);
+    --color-equal-key-bg: hsl(176, 100%, 44%);
+    --color-equal-key-shadow: hsl(177, 92%, 70%);
+    --color-key-bg: hsl(268, 47%, 21%);
+    --color-key-shadow: hsl(290, 70%, 36%);
+    --color-text-dark: hsl(52, 100%, 62%);
+    --color-text-white: hsl(0, 100%, 100%);
+    --color-text-equal: hsl(198, 20%, 13%);
+  }
+}
