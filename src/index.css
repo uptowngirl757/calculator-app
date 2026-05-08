@@ -3,9 +3,9 @@
 body {
   font-family: 'Leauge Spartan', sans-serif;
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 @theme {
   --color-background: hsl(222, 26%, 31%);
