@@ -16,7 +16,7 @@ const App = () => {
   }, [theme])
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
-      <div className="max-w-xl w-full">
+      <div className="max-w-107.5 mx-auto w-[95%]">
         <ThemeSwitcher theme={theme} setTheme={setTheme} />
         <Calculator theme={theme} setTheme={setTheme} />
       </div>
