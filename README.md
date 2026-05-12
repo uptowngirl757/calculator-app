@@ -29,7 +29,9 @@ Users should be able to:
 ### Screenshot
 
 ![](./public/screenshot-normal.png)
+
 ![](./public/screenshot-light.png)
+
 ![](./public/screenshot-neon.png)
 
 ### Links
