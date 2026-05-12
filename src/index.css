@@ -19,7 +19,6 @@ body {
   --color-key-shadow: hsl(28, 16%, 65%);
   --color-text-dark: hsl(221, 14%, 31%);
   --color-text-white: hsl(0, 100%, 100%);
-  /* --color-text-equal: hsl(0, 100%, 100%); */
 }
 @layer base {
   [data-theme='light'] {
@@ -34,7 +33,6 @@ body {
     --color-key-shadow: hsl(35, 11%, 61%);
     --color-text-dark: hsl(60, 10%, 19%);
     --color-text-white: hsl(0, 100%, 100%);
-    /* --color-text-equal: hsl(0, 100%, 100%); */
   }
   [data-theme='neon'] {
     --color-background: hsl(268, 75%, 9%);

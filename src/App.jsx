@@ -4,8 +4,14 @@ import ThemeSwitcher from './components/ThemeSwitcher'
 import Calculator from './components/Calculator'
 
 const App = () => {
-  const [theme, setTheme] = useState(1)
-
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem('theme')
+    return saved ? Number(saved) : 1
+  })
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+  }, [theme])
+  
   useEffect(() => {
     const themeMap = {
       1: 'default',
